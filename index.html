@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ido Event Planner</title>
+	<link  rel="shortcut icon" type="images/lk.jpg" href="images/lk.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link  rel="shortcut icon" type="images/lk.jpg" href="images/lk.jpg">
+	<link rel="stylesheet" type="text/css" href="ido_styling.css">
+</head>
+<body style="background-color: #faf3f3">
+ <div class="ohh">
+          <img class="ido" src="images/lk.jpg"  alt="instagram"  style="width: 300px"> 
+</div>
+
+   <header class="main-header">
+        <nav class="nav main-nav" id="navbar">
+            <ul>  
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="#">CONTACT US: 79938 77062</a>
+        
+            
+           <li> <a href="https://www.instagram.com/ido_planners/" target="_blank">
+       <img class="insta" src="images/iglogo.jpg" alt="instagram" >
+       </a>
+    </li>
+</ul>
+        </nav>
+ </header>
+
+
+
+
+
+
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="images/bday.jpg" style="width:100%">
+  <div class="text"><p class="tt" style="color: black">Give the best vibe possible for your dear ones.<br>We are here to make your day the best of all.</p></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images/supris.jpg" style="width:100%">
+  <div class="text"><p class="tt" style="color: black">A surprise for your love..!!</p></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/babyshower.jpg" style="width:100%">
+  <div class="text"><p class="tt" style="color: black">Mommy! It's time to welcome me..</p></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="images/bridetobe.jpg" style="width:100%">
+  <div class="text"><p class="tt" style="color: black"> A Bride to be ...!</p></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1) ">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div >
+<fieldset style="background: url('images/fbg.jpeg'); background-repeat: no-repeat;">
+<legend style="text-align: center;"><h1 style="color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">|EVENTS|</h1></legend>
+
+<center><ul  class="eve">
+<center><li style="color: black;">BIRTHDAY</li></center>
+<hr>
+<li style="color: black;">SUPRISE PARTY</li>
+<hr>
+<li style="color: black;">BABY SHOWER</li>
+<hr>
+<li style="color:black ;">BRIDE/GROOM TO BE</li>
+<hr>
+<li style="color:black ;">CUSTOMIZED PARTIES</li>
+<hr>
+</ul></center>
+ <MARQUEE direction='right' ><p style="color: red">FEEL FREE TO CONTACT US FOR FURTHER QUERIES<BR><q>WE ARE AVAILABLE ONLY IN HYDREBAD</q></p></MARQUEE>
+</fieldset>
+</div>
+<!--description............-->
+<h2 style="color: black; text-align: center; font-size: 300%;font-family: monospace;">BIRTHDAY</h2>
+<p style="color: black; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">"Put your feet on the table,enjoy your coffee and let us to prepare unforgettable Birthday celebration or Christening exactly How you imagined in your Thoughts"</p>
+<img class="birth" src="images/birthday.jpg" alt="birthday"></div>
+
+
+<div>
+<h2 style="color: black; text-align: center; font-size: 300%;font-family: monospace;">Suprise Party</h2>
+<p style="color: black; text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">"SSsshhhHH! it's a SUPRISE!!!!"</p>
+<img  class="sup" src="images/suprise.jpg" alt="suprise"></div>
+
+<div>
+<h2 style="color: black; text-align: center; font-size: 300%;font-family: monospace;"> BABY SHOWER</h2>
+
+<p style="color: black; text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">"Baby showers are excellent ways to pamper expectant mothers and help them get ready for parenting while spending time with friends and family members. If you’re taking on baby shower planning responsibilities for a celebration, Let us help."</p>
+<img class="baby" src="images/baby.jpg" alt="baby"></div>
+
+
+<div>
+<h2 style="color: black; text-align: center; font-size: 300%;font-family: monospace;">Bride/Groom To be</h2>
+<p style="color: black; text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">" Time to make the MAGIC happen"</p>
+<img class="bride" src="images/bride.jpg" alt="bride"></div>
+
+<fieldset style="width: 100% ;height: 70%">
+ <legend style="text-align: center;"><h1 style="color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">| OUR CAPTURES |</h1></legend>
+
+
+ <div style="box-sizing: border-box;">
+<div class="r">
+  <div class="c">
+  <img src="images/re1.jpg" style="width: 30% height30%" alt="birthday" >
+</div>
+
+<div class="c">
+<img src="images/re2.jpg" alt="birthday" >
+</div>
+
+<div class="c">
+  <img src="images/re3.jpg" alt="birthday" >
+</div>
+
+<div class="c">
+   <img src="images/re4.jpg" alt="birthday" >
+</div>
+</div>
+</div>
+</fieldset>
+
+<footer>
+  <p class="fp">Celebration is not only for a day it's a lifelong memory. We are here to add a elegant touch to your memory. Make the best memory with us.</p>
+  <hr style="height: 2px">
+
+  <table style="border:0">
+    <tr >
+      <th>Contact us</th>
+      <th>Services</th>
+      <th>Webpage developers</th>
+    </tr>
+
+    <tr >
+      <td>79938 77062</td>
+      <td>Customized properties</td>
+      <td>Nandini B M<br>Presidency University</td>
+      
+      
+    </tr>
+    <tr>
+      <td> weidoplanners@gmail.com</td>
+      <td>Decoration</td>
+      <td>Ponna Akash<br>Presidency University</td>
+    </tr>   
+  </table>  
+      
+  <p class="cp" >&#169;COPYRIGHT - IDO PLANNERS 2021.ALL RIGHTS RESERVED</p>  
+
+</footer>
+
+
+</body>
+</html>
